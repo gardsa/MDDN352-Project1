@@ -21,11 +21,13 @@ body {
 
 #header {
   position: fixed;
-  top: 1.875em;
+  top: 0;
   left: 0;
   right: 0;
   height: 5em;
+  padding: 1.875em 0;
   z-index: 3;
+  background-color: #fff;
 }
 
 #header, .header-container {
@@ -84,7 +86,7 @@ li:first-child {
   margin: 0 -.625em;
   padding: 0;
   font-weight: 600;
-  color: #4874ce;
+  color: #7f507b;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1875em;
@@ -139,7 +141,7 @@ li:first-child {
   font-weight: 700;
   letter-spacing: .1875em;
   text-transform: uppercase;
-  color: #4874ce;
+  color: #7f507b;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -158,7 +160,7 @@ li:first-child {
 }
 
 .core .page-background {
-  background-image: url('assets/test-img.png');
+  background-image: url('assets/hero-background.png');
   background-position: center;
 }
 
@@ -224,7 +226,7 @@ li:first-child {
   font-size: 1.875em;
   letter-spacing: .1875em;
   text-transform: uppercase;
-  color: #ef6998;
+  color: #3accb0;
   line-height: 1;
 }
 
