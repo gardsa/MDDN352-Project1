@@ -25,9 +25,15 @@ body {
   left: 0;
   right: 0;
   height: 5em;
-  padding: 1.875em 0;
+  padding: 0;
   z-index: 3;
   background-color: #fff;
+}
+
+@media (min-height: 33.75em){
+  #header {
+    padding: 1.875em 0;
+  }
 }
 
 #header, .header-container {
@@ -39,7 +45,7 @@ body {
   height: inherit;
 }
 
-.core .header-container, .title {
+.core .header-container, .page-title {
   padding: 0 1.25em;
   margin: 0 auto;
   box-sizing: border-box;
@@ -132,7 +138,7 @@ li:first-child {
 
 .core .page-title h1 {
   position: absolute;
-  top: 50%;
+  top: 50%; /* TODO: sort out positioning of this element */
   left: .8695em;
   max-width: 8.6959em;
   -webkit-transform: translateY(-50%);
@@ -208,15 +214,21 @@ li:first-child {
   max-width: 75em;
 }
 
-@media (min-width: 20em){
+@media (min-width: 20em) {
   .container-base {
-    max-width: 25em;
+    max-width: 22.5em;
   }
 }
 
-@media (min-width: 32.5em){
+@media (min-width: 32.5em) {
   .container-base {
-    max-width: 45em;
+    max-width: 35em;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .container-base {
+    max-width: 53.75em;
   }
 }
 
@@ -226,7 +238,7 @@ li:first-child {
   font-size: 1.875em;
   letter-spacing: .1875em;
   text-transform: uppercase;
-  color: #3accb0;
+  color: #7f507b;
   line-height: 1;
 }
 
@@ -237,6 +249,5 @@ li:first-child {
   margin: 0 0 1.42857em;
   padding: 0;
   font-family: 'Noto Sans', sans-serif;
-  /*font-size: .875em;*/
   font-weight: 400;
 }
