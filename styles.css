@@ -27,17 +27,26 @@ header {
   right: 0;
   height: 5em;
   padding: 0;
-  z-index: 3;
+  z-index: 999;
   background-color: #fff;
+  -webkit-transition: height .3s;
+  -moz-transition: height .3s;
+  -ms-transition: height .3s;
+  -o-transition: height .3s;
+  transition: height .3s;
 }
 
 @media (min-height: 33.75em){
-  #header {
+  header {
     padding: 1.875em 0;
+  }
+
+  header.smaller {
+    padding: .5em 0;
   }
 }
 
-#header, .header-container {
+header, .header-container {
   width: 100%;
 }
 
@@ -83,6 +92,11 @@ header {
   padding: 2.0625em 0;
   list-style-type: none;
   margin: 0;
+  -webkit-transition: padding .3s;
+  -moz-transition: padding .3s;
+  -ms-transition: padding .3s;
+  -o-transition: padding .3s;
+  transition: padding .3s;
 }
 
 li:first-child {
@@ -119,10 +133,34 @@ li:first-child {
   width: 5em;
   margin: 0 auto;
   z-index: 1;
+  -webkit-transition: width .3s;
+  -moz-transition: width .3s;
+  -ms-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
 }
 
 #logo {
+  width: inherit;
   height: 100%;
+  -webkit-transition: width .3s;
+  -moz-transition: width .3s;
+  -ms-transition: width .3s;
+  -o-transition: width .3s;
+  transition: width .3s;
+}
+
+header.smaller {
+  height: 3em;
+  background-color: #ededed;
+}
+
+header.smaller .list-nav {
+  padding: 1em 0;
+}
+
+header.smaller .header-logo {
+  width: 3em;
 }
 
 /* TITLE */
@@ -186,8 +224,11 @@ li:first-child {
 #main {
   display: block;
   box-sizing: border-box;
-  padding: 5.3125em 0 0;
   position: relative;
+}
+
+#outline, #visuals {
+  padding: 3em 0 0;
 }
 
 .container-element {
