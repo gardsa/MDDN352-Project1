@@ -58,7 +58,7 @@ header, .header-container {
 }
 
 .header-container {
-  max-width: 26.5em;
+  max-width: 22.5em;
 }
 
 @media (min-width: 32.5em) {
@@ -244,7 +244,7 @@ header.smaller .header-logo {
 }
 
 .container-base {
-  max-width: 26.5em;
+  max-width: 22.5em;
 }
 
 @media (min-width: 32.5em) {
@@ -262,6 +262,35 @@ header.smaller .header-logo {
 .example {
   width: 100%;
   padding-top: 1.5em;
+}
+
+.prototype-container {
+  position: relative;
+  padding-bottom: 177.5%;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.prototype-container iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 264px;
+  height: 468px;
+}
+
+
+@media (min-width: 32.5em) {
+  .prototype-container {
+    padding-bottom: 654px;
+    background-color: #1e1e1e;
+  }
+
+  .prototype-container iframe {
+    width: inherit;
+    height: 654px;
+  }
 }
 
 @media (min-width: 32.5em) {
@@ -290,13 +319,13 @@ header.smaller .header-logo {
   }
 
   .example-half {
-    display: inline-block;
-    width: 45%;
-  }
+   display: inline-block;
+   width: 45%;
+ }
 
-  .example-right {
-    float: right;
-  }
+ .example-right {
+   float: right;
+ }
 }
 
 #main h2 {
@@ -323,6 +352,10 @@ header.smaller .header-logo {
 
 #main i {
   font-style: italic;
+}
+
+#main strong {
+  font-weight: bold;
 }
 
 #main a {
