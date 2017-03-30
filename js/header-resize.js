@@ -1,7 +1,7 @@
 function init() {
   window.addEventListener('scroll', function(e){
     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-      shrinkOn = window.innerHeight - 75, // TODO: this should be end of hero section
+      shrinkOn = window.innerHeight - 75,
       header = document.querySelector('header');
     if (distanceY > shrinkOn) {
       header.classList.add('smaller');

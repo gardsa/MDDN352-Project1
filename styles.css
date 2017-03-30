@@ -3,7 +3,8 @@ body {
   line-height: 1;
   overflow-x: hidden;
   margin: 0;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  padding-bottom: 10em;
 }
 
 @media (min-width: 20em) {
@@ -275,8 +276,9 @@ header.smaller .header-logo {
 }
 
 .example {
+  width: 100%;
   text-align: justify;
-  padding-top: 2em;
+  padding-top: 4em;
 }
 
 @media (min-width: 56.25em) {
@@ -317,4 +319,76 @@ header.smaller .header-logo {
 
 .container img {
   width: 100%;
+}
+
+.grid {
+ width: calc(96%);
+ padding: 2%;
+ background-color: #ededed;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer {
+  width: calc(96% / 3);
+}
+
+.gutter-sizer {
+  width: 2%;
+}
+
+.grid-item {
+  width: calc((100% / 3) - 3%);
+  height: 0;
+  padding-bottom: calc((100% / 3) - 3%);
+  float: left;
+  background-color: #3ACCB0;
+  border-radius: 5px;
+}
+
+.grid-item.temp {
+  background-image: url('assets/temp.svg');
+  background-size: cover;
+}
+.grid-item.wind {
+  background-image: url('assets/wind.svg');
+  background-size: cover;
+}
+.grid-item.cloud {
+  background-image: url('assets/cloud.svg');
+  background-size: cover;
+}
+.grid-item.rain {
+  background-image: url('assets/rain.svg');
+  background-size: cover;
+}
+
+.grid-item-width3 {
+  width: 96%;
+  height: 0;
+  padding-bottom: 50%;
+  /*padding-bottom: calc((100% / 3) - 4%);*/
+  background-color: #7f507b;
+}
+
+.grid-item:hover {
+  border-color: #FFF;
+  cursor: move;
+}
+
+.grid-item.is-dragging,
+.grid-item.is-positioning-post-drag {
+  background-color: #FFFs;
+  z-index: 2;
+}
+
+.packery-drop-placeholder {
+  outline: 1px dashed #1e1e1e;
+  outline-offset: -2px;
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
 }
