@@ -277,11 +277,20 @@ header.smaller .header-logo {
 
 .example {
   width: 100%;
-  text-align: justify;
-  padding-top: 4em;
+  padding-top: 1.5em;
+}
+
+@media (min-width: 32.5em) {
+  .example {
+    padding-top: 2.75em;
+  }
 }
 
 @media (min-width: 56.25em) {
+  .example {
+    padding-top: 4em;
+  }
+
   .example-half {
     display: inline-block;
     width: 45%;
@@ -300,21 +309,28 @@ header.smaller .header-logo {
   letter-spacing: .1875em;
   text-transform: uppercase;
   color: #7f507b;
-  line-height: 1;
+  line-height: 1.25;
 }
 
 #main p {
-  letter-spacing: .0625em;
-  color: #1e1e1e;
-  line-height: 1.8;
   margin: 0 0 1.42857em;
   padding: 0;
+  color: #1e1e1e;
+  text-align: justify;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: .0625em;
 }
 
 #main i {
   font-style: italic;
+}
+
+#main a {
+  font-weight: 800;
+  color: #7f507b;
+  text-decoration: none;
 }
 
 .container img {
