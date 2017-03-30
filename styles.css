@@ -1,16 +1,11 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 82.5%;
   line-height: 1;
   overflow-x: hidden;
   margin: 0;
   scroll-behavior: smooth;
   padding-bottom: 10em;
-}
-
-@media (min-width: 20em) {
-  body {
-    font-size: 82.5%;
-  }
 }
 
 @media (min-width: 32.5em) {
@@ -62,10 +57,8 @@ header, .header-container {
   box-sizing: border-box;
 }
 
-@media (min-width: 20em) {
-  .header-container {
-    max-width: 22.5em;
-  }
+.header-container {
+  max-width: 26.5em;
 }
 
 @media (min-width: 32.5em) {
@@ -120,6 +113,11 @@ li:first-child {
   position: relative;
   text-decoration: none;
   color: inherit;
+  transition: color .3s;
+}
+
+.list-nav-elem a:hover{
+  color: #3ACCB0;
 }
 
 .list-nav-elem-left {
@@ -228,24 +226,12 @@ header.smaller .header-logo {
   position: relative;
 }
 
-#outline, #visuals {
+.node {
   padding: 3em 0 0;
 }
 
 .container-element {
   margin: 0 auto;
-}
-
-@media (min-with: 20em){
-  .container-element {
-    padding: 4.0625em 0 0;
-  }
-}
-
-@media (min-with: 32.5em){
-  .container-element {
-    padding: 4.6875em 0 0;
-  }
 }
 
 .container {
@@ -257,10 +243,8 @@ header.smaller .header-logo {
   max-width: 75em;
 }
 
-@media (min-width: 20em) {
-  .container-base {
-    max-width: 22.5em;
-  }
+.container-base {
+  max-width: 26.5em;
 }
 
 @media (min-width: 32.5em) {
@@ -283,6 +267,20 @@ header.smaller .header-logo {
 @media (min-width: 32.5em) {
   .example {
     padding-top: 2.75em;
+  }
+
+  .colours, .fonts {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .colours .example {
+    flex-basis: 30%;
+  }
+
+  .fonts .example {
+    flex-basis: 45%;
   }
 }
 
@@ -331,6 +329,12 @@ header.smaller .header-logo {
   font-weight: 800;
   color: #7f507b;
   text-decoration: none;
+  transition: color .3s;
+  cursor: pointer;
+}
+
+#main a:hover{
+  color: #3ACCB0;
 }
 
 .container img {
@@ -341,6 +345,12 @@ header.smaller .header-logo {
  width: calc(96%);
  padding: 2%;
  background-color: #ededed;
+}
+
+@media (min-width: 32.5em){
+  .grid {
+    margin-top: -4em;
+  }
 }
 
 .grid:after {
