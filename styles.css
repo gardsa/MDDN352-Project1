@@ -403,6 +403,7 @@ header.smaller .header-logo {
  width: calc(90%);
  padding: 5%;
  background-color: #EDEDED;
+ border-radius: 5px;
 }
 
 @media (min-width: 56.25em){
@@ -470,8 +471,42 @@ header.smaller .header-logo {
 }
 
 .packery-drop-placeholder {
-  outline: 1px dashed #1E1E1E;
-  outline-offset: -2px;
+  border: 1px dashed #1E1E1E;
+  border-radius: 5px;
+  margin: -1px -1px 0 0;
   -webkit-transition: -webkit-transform 0.2s;
           transition: transform 0.2s;
+}
+
+footer {
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: -10em;
+  text-align: center;
+  background-color: #EDEDED;
+  letter-spacing: .1875em;
+  color: #3ACCB0;
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 22.5em;
+  padding: 3em 0;
+}
+
+@media (min-width: 32.5em) {
+  footer {
+    margin-top: 10em;
+  }
+
+  .footer-container {
+    max-width: 35em;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .footer-container {
+    max-width: 53.75em;
+  }
 }
