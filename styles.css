@@ -275,7 +275,7 @@ header.smaller .header-logo {
 
 .example {
   width: 100%;
-  padding-top: 1.5em;
+  padding: 1.5em 0;
 }
 
 .prototype-container {
@@ -298,7 +298,8 @@ header.smaller .header-logo {
 @media (min-width: 32.5em) {
   .prototype-container {
     padding-bottom: 654px;
-    background-color: #1E1E1E;
+    background-color: #F6F6F6;
+    border-radius: 10px;
   }
 
   .prototype-container iframe {
@@ -399,14 +400,14 @@ header.smaller .header-logo {
 }
 
 .grid {
- width: calc(96%);
- padding: 2%;
+ width: calc(90%);
+ padding: 5%;
  background-color: #EDEDED;
 }
 
-@media (min-width: 32.5em){
+@media (min-width: 56.25em){
   .grid {
-    margin-top: -4em;
+    margin-top: -2em;
   }
 }
 
@@ -417,17 +418,17 @@ header.smaller .header-logo {
 }
 
 .grid-sizer {
-  width: calc(96% / 3);
+  width: calc(90% / 3);
 }
 
 .gutter-sizer {
-  width: 2%;
+  width: 4%;
 }
 
 .grid-item {
-  width: calc((100% / 3) - 3%);
+  width: calc((100% / 3) - 4.5%);
   height: 0;
-  padding-bottom: calc((100% / 3) - 3%);
+  padding-bottom: calc((100% / 3) - 4.5%);
   float: left;
   background-color: #3ACCB0;
   border-radius: 5px;
@@ -451,10 +452,9 @@ header.smaller .header-logo {
 }
 
 .grid-item-width3 {
-  width: 96%;
+  width: 90%;
   height: 0;
   padding-bottom: 50%;
-  /*padding-bottom: calc((100% / 3) - 4%);*/
   background-color: #7F507B;
 }
 
