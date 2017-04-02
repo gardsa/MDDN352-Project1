@@ -230,6 +230,18 @@ header.smaller .header-logo {
   padding: 3em 0 0;
 }
 
+@media (min-width: 32.5em) {
+  .node {
+    padding: 4.5em 0 0;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .node {
+    padding: 6em 0 0;
+  }
+}
+
 .container-element {
   margin: 0 auto;
 }
@@ -245,11 +257,13 @@ header.smaller .header-logo {
 
 .container-base {
   max-width: 22.5em;
+  padding-top: 1em;
 }
 
 @media (min-width: 32.5em) {
   .container-base {
     max-width: 35em;
+    padding-top: 2em;
   }
 }
 
@@ -324,6 +338,7 @@ header.smaller .header-logo {
  }
 
  .example-right {
+   text-align: right;
    float: right;
  }
 }
@@ -372,6 +387,7 @@ header.smaller .header-logo {
 
 #main .highlight {
   padding: 0.3125em 0.6250em;
+  font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
   text-transform: uppercase;
   background-color: #3ACCB0;
