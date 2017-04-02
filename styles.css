@@ -230,18 +230,6 @@ header.smaller .header-logo {
   padding: 3em 0 0;
 }
 
-/*@media (min-width: 32.5em) {
-  .node {
-    padding: 4em 0 0;
-  }
-}
-
-@media (min-width: 56.25em) {
-  .node {
-    padding: 5em 0 0;
-  }
-}*/
-
 .container-element {
   margin: 0 auto;
 }
@@ -339,7 +327,7 @@ header.smaller .header-logo {
  }
 
  .example-right {
-   text-align: right;
+   /*text-align: right;*/
    float: right;
  }
 }
